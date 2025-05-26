@@ -35,6 +35,9 @@ dependencies:
   pg:
     specifier: ^8.14.1
     version: 8.16.0
+  pg-error-enum:
+    specifier: ^1.0.2
+    version: 1.0.2
   reflect-metadata:
     specifier: ^0.2.0
     version: 0.2.2
@@ -4351,6 +4354,11 @@ packages:
 
   /pg-connection-string@2.9.0:
     resolution: {integrity: sha512-P2DEBKuvh5RClafLngkAuGe9OUlFV7ebu8w1kmaaOgPcpJd1RIFh7otETfI6hAR8YupOLFTY7nuvvIn7PLciUQ==}
+
+  /pg-error-enum@1.0.2:
+    resolution: {integrity: sha512-zcMbZwFtsyUhLeY7r9SY24gjJ+7dlpyp1GmcPCwsiwgnh2iEjr2K7FYEqZOLjI1+6DEW0yne01VzP+Irnhd2Yg==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >23.0.0}
+    dev: false
 
   /pg-int8@1.0.1:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}

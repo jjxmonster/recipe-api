@@ -9,7 +9,6 @@ export class AuthController {
 
   @Post('register')
   async register(@Body() user: CreateUserDto): Promise<User> {
-    // Todo: make sure that password & confirm password are equal
     return this.authService.register(user);
   }
 }

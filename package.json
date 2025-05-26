@@ -35,6 +35,7 @@
     "class-validator": "^0.14.1",
     "joi": "^17.13.3",
     "pg": "^8.14.1",
+    "pg-error-enum": "^1.0.2",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.21"
