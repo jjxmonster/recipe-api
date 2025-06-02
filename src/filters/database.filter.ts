@@ -5,7 +5,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { QueryFailedError, TypeORMError } from 'typeorm';
-import { PostgresError } from 'pg-error-enum';
+import { UNIQUE_VIOLATION } from 'pg-error-constants';
 
 @Catch(TypeORMError)
 export class DatabaseExceptionFilter implements ExceptionFilter {
@@ -16,7 +16,7 @@ export class DatabaseExceptionFilter implements ExceptionFilter {
     let message = 'Database error';
 
     if (exception instanceof QueryFailedError) {
-      if (exception.driverError.code === PostgresError.UNIQUE_VIOLATION) {
+      if (exception.driverError.code === UNIQUE_VIOLATION) {
         message = 'User already exists';
         statusCode = HttpStatus.CONFLICT;
       }
